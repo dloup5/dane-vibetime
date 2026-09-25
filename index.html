@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio and engineering website of Dane - Creative Technologist & Software Engineer specializing in modern web architecture, systems, and design.">
+  <meta name="author" content="Dane">
+  <title>Dane — Creative Technologist & Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" id="brand-logo" aria-label="Dane Home">
+        <span class="brand-dot"></span>
+        <span>Dane.dev</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+          <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
+          <li class="nav-cta">
+            <a href="mailto:hello@dane.dev" class="btn btn-secondary btn-sm" id="nav-contact">Get in Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-content">
+    <div class="container">
+
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero" aria-labelledby="hero-title">
+        <div class="badge" id="availability-badge">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities & collaborations</span>
+        </div>
+
+        <h1 class="page-title" id="hero-title">
+          Engineering scalable systems with <span class="gradient-text">exceptional craft</span>.
+        </h1>
+
+        <p class="lead-text" id="hero-intro">
+          Hi, I'm Dane. I'm a software engineer and creative technologist bridging high-performance backend engineering with intuitive, responsive user experiences.
+        </p>
+
+        <div class="hero-actions" id="hero-cta-group">
+          <a href="project.html" class="btn btn-primary" id="btn-hero-projects">
+            <span>Explore Projects</span>
+            <span>→</span>
+          </a>
+          <a href="resume.html" class="btn btn-secondary" id="btn-hero-resume">
+            View Resume
+          </a>
+          <a href="mailto:hello@dane.dev" class="btn btn-secondary" id="btn-hero-contact">
+            Contact Me
+          </a>
+        </div>
+      </section>
+
+      <!-- Focus Areas / Competencies -->
+      <section class="resume-section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title" id="capabilities-title">What I Focus On</h2>
+        </div>
+
+        <div class="grid-3" id="capabilities-grid">
+          <article class="card" id="capability-fullstack">
+            <h3 class="role-title" style="margin-bottom: 0.75rem;">Full-Stack Architecture</h3>
+            <p class="project-desc">
+              Designing scalable microservices, clean REST & GraphQL APIs, and performant web interfaces with modern TypeScript, React, Node.js, and Python.
+            </p>
+            <div class="tag-list">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="card" id="capability-cloud">
+            <h3 class="role-title" style="margin-bottom: 0.75rem;">Cloud & DevOps</h3>
+            <p class="project-desc">
+              Automating deployment pipelines, containerizing services, and architecting resilient infrastructure with Docker, Kubernetes, AWS, and modern CI/CD.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Terraform</span>
+            </div>
+          </article>
+
+          <article class="card" id="capability-ux">
+            <h3 class="role-title" style="margin-bottom: 0.75rem;">Interactive UI & Systems</h3>
+            <p class="project-desc">
+              Crafting fluid interfaces, accessible design tokens, micro-interactions, and reactive state management that prioritize user delight and accessibility.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Design Systems</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Performance</span>
+              <span class="tag">Figma</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Featured Project Highlight -->
+      <section class="resume-section" id="featured-work" aria-labelledby="featured-work-title">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Featured Work</span>
+            <h2 class="section-title" id="featured-work-title">Selected Projects</h2>
+          </div>
+          <a href="project.html" class="btn btn-secondary btn-sm" id="btn-view-all-projects">View All Projects →</a>
+        </div>
+
+        <div class="grid-2" id="featured-grid">
+          <article class="card project-card" id="featured-pulse">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ Real-Time Analytics Dashboard ]</code>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span>Pulse Analytics</span>
+              <span class="tag">v2.4</span>
+            </h3>
+            <p class="project-desc">
+              A high-throughput distributed telemetry processing engine and analytics dashboard handling millions of events daily with sub-second querying.
+            </p>
+            <div class="tag-list">
+              <span class="tag">TypeScript</span>
+              <span class="tag">ClickHouse</span>
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-footer">
+              <a href="project.html#pulse-analytics" class="btn btn-secondary btn-sm" id="link-details-pulse">Case Study</a>
+              <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="featured-omni">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ AI Workflow Orchestration Engine ]</code>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <span>OmniFlow</span>
+              <span class="tag">Open Source</span>
+            </h3>
+            <p class="project-desc">
+              Intelligent multi-model workflow orchestration pipeline enabling asynchronous LLM tool chaining, structured streaming, and robust human-in-the-loop validation.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Redis</span>
+            </div>
+            <div class="project-footer">
+              <a href="project.html#omniflow" class="btn btn-secondary btn-sm" id="link-details-omni">Case Study</a>
+              <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Quick Contact CTA -->
+      <section class="card" id="cta-card" style="text-align: center; padding: 3.5rem 2rem; background: linear-gradient(180deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);">
+        <span class="section-tag">Let's Collaborate</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Interested in building something together?</h2>
+        <p class="lead-text" style="margin: 0 auto 2rem; max-width: 540px;">
+          Whether you're looking for a lead engineer, technical advisor, or full-stack collaborator, my inbox is always open.
+        </p>
+        <a href="mailto:hello@dane.dev" class="btn btn-primary" id="btn-bottom-contact">
+          hello@dane.dev
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer" id="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>© 2026 Dane. Crafted with semantic HTML & vanilla CSS.</p>
+      </div>
+      <div class="social-links" id="footer-social-links">
+        <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-github">GitHub</a>
+        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-linkedin">LinkedIn</a>
+        <a href="mailto:hello@dane.dev" class="social-link" id="social-email">Email</a>
+        <a href="resume.html" class="social-link" id="social-resume">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

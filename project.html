@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects and portfolio showcase by Dane - Explore featured applications, distributed systems, developer tools, and open source libraries.">
+  <meta name="author" content="Dane">
+  <title>Projects — Dane | Engineering & Open Source Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" id="brand-logo" aria-label="Dane Home">
+        <span class="brand-dot"></span>
+        <span>Dane.dev</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="project.html" class="nav-link active" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
+          <li class="nav-cta">
+            <a href="mailto:hello@dane.dev" class="btn btn-secondary btn-sm" id="nav-contact">Get in Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-content">
+    <div class="container">
+
+      <!-- Projects Header Section -->
+      <section class="resume-section" id="projects-header">
+        <span class="section-tag">Portfolio & Case Studies</span>
+        <h1 class="page-title" id="projects-title">Featured <span class="gradient-text">Projects & Systems</span></h1>
+        <p class="lead-text">
+          A curated collection of web applications, cloud infrastructure tools, and open-source packages I've architected and brought to production.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="skill-chips" id="project-filters" style="margin-top: 1rem;">
+          <span class="skill-chip" style="background: rgba(255, 255, 255, 0.1); border-color: var(--accent-cyan); color: #fff;">All Works</span>
+          <span class="skill-chip">Distributed Systems</span>
+          <span class="skill-chip">Full Stack</span>
+          <span class="skill-chip">AI & Tooling</span>
+          <span class="skill-chip">Open Source</span>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="resume-section" id="projects-gallery" aria-labelledby="projects-title">
+        <div class="grid-2" id="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project-card" id="pulse-analytics">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ Real-Time Analytics Pipeline & Dashboard ]</code>
+              </div>
+            </div>
+            <h2 class="project-title">
+              <span>Pulse Analytics</span>
+              <span class="tag">Production</span>
+            </h2>
+            <p class="project-desc">
+              High-performance telemetry pipeline and visualization platform built to ingest, aggregate, and query over 10M+ events per day with sub-50ms query responses. Features real-time alerts, custom metrics widgets, and multi-tenant access control.
+            </p>
+            <div class="tag-list">
+              <span class="tag">ClickHouse</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Go</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" id="btn-live-pulse" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com" class="btn btn-secondary btn-sm" id="btn-repo-pulse" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card" id="omniflow">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ Async Multi-Agent Workflow Engine ]</code>
+              </div>
+            </div>
+            <h2 class="project-title">
+              <span>OmniFlow</span>
+              <span class="tag">Open Source</span>
+            </h2>
+            <p class="project-desc">
+              An asynchronous LLM orchestration runtime supporting streaming state machines, human-in-the-loop approvals, deterministic schema validation, and flexible vector retrieval routing.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Redis Streams</span>
+              <span class="tag">Pydantic</span>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" id="btn-live-omni" target="_blank" rel="noopener noreferrer">Documentation ↗</a>
+              <a href="https://github.com" class="btn btn-secondary btn-sm" id="btn-repo-omni" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card" id="hypercache">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ In-Memory Distributed Key-Value Store ]</code>
+              </div>
+            </div>
+            <h2 class="project-title">
+              <span>HyperCache</span>
+              <span class="tag">Library</span>
+            </h2>
+            <p class="project-desc">
+              Lightweight, thread-safe in-memory cache implementation with Raft consensus protocol support, configurable TTL eviction policies (LRU/LFU), and continuous snapshotting to persistent disk.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Go</span>
+              <span class="tag">Raft Protocol</span>
+              <span class="tag">TCP/Sockets</span>
+              <span class="tag">Benchmarking</span>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" id="btn-live-hypercache" target="_blank" rel="noopener noreferrer">Benchmarks ↗</a>
+              <a href="https://github.com" class="btn btn-secondary btn-sm" id="btn-repo-hypercache" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card project-card" id="prism-design">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <code>[ Headless Design System & Token Engine ]</code>
+              </div>
+            </div>
+            <h2 class="project-title">
+              <span>Prism UI</span>
+              <span class="tag">Design System</span>
+            </h2>
+            <p class="project-desc">
+              Comprehensive accessible component library and token architecture designed for multi-brand deployment. Features dark/light contrast validation, WAI-ARIA compliant primitives, and zero runtime overhead.
+            </p>
+            <div class="tag-list">
+              <span class="tag">CSS Architecture</span>
+              <span class="tag">Web Components</span>
+              <span class="tag">Figma Tokens</span>
+              <span class="tag">Storybook</span>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" id="btn-live-prism" target="_blank" rel="noopener noreferrer">Storybook ↗</a>
+              <a href="https://github.com" class="btn btn-secondary btn-sm" id="btn-repo-prism" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Collaboration CTA -->
+      <section class="card" id="project-contact-cta" style="text-align: center; padding: 3.5rem 2rem; background: linear-gradient(180deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);">
+        <span class="section-tag">Let's Build</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Have a project or technical challenge?</h2>
+        <p class="lead-text" style="margin: 0 auto 2rem; max-width: 560px;">
+          I'm always keen to discuss new architecture problems, open-source initiatives, or contract projects.
+        </p>
+        <a href="mailto:hello@dane.dev" class="btn btn-primary" id="btn-project-cta">
+          Start a Conversation
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer" id="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>© 2026 Dane. Crafted with semantic HTML & vanilla CSS.</p>
+      </div>
+      <div class="social-links" id="footer-social-links">
+        <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-github">GitHub</a>
+        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-linkedin">LinkedIn</a>
+        <a href="mailto:hello@dane.dev" class="social-link" id="social-email">Email</a>
+        <a href="index.html" class="social-link" id="social-home">Home</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

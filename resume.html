@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Resume of Dane - Senior Software Engineer & Creative Technologist. Experience in distributed systems, full-stack architecture, and cloud infrastructure.">
+  <meta name="author" content="Dane">
+  <title>Resume — Dane | Experience & Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" id="brand-logo" aria-label="Dane Home">
+        <span class="brand-dot"></span>
+        <span>Dane.dev</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" class="nav-link active" id="nav-resume">Resume</a></li>
+          <li class="nav-cta">
+            <a href="mailto:hello@dane.dev" class="btn btn-secondary btn-sm" id="nav-contact">Get in Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-content">
+    <div class="container">
+
+      <!-- Resume Header -->
+      <section class="resume-section" id="resume-header">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
+          <div>
+            <span class="section-tag">Curriculum Vitae</span>
+            <h1 class="page-title" id="resume-title">Resume & <span class="gradient-text">Experience</span></h1>
+            <p class="lead-text" style="margin-bottom: 0;">
+              Software engineer with over 6 years of experience leading engineering initiatives, designing high-throughput distributed systems, and shipping production applications.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#skills" class="btn btn-secondary" id="btn-jump-skills">Skills Overview</a>
+            <a href="javascript:window.print()" class="btn btn-primary" id="btn-download-pdf">
+              <span>Print / Save PDF</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Timeline -->
+      <section class="resume-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title" id="experience-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+
+          <!-- Role 1 -->
+          <article class="timeline-item" id="exp-lead-engineer">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <div class="role-header">
+                <div>
+                  <h3 class="role-title">Lead Software Engineer</h3>
+                  <p class="role-company">Apex Cloud Platforms</p>
+                </div>
+                <span class="role-date">2023 — Present</span>
+              </div>
+              <ul class="role-bullets">
+                <li>Spearheaded redesign of real-time telemetry pipeline, decreasing p99 ingestion latency by 42% across 10M+ daily events.</li>
+                <li>Architected zero-downtime multi-region Kubernetes migration, improving system availability to 99.99%.</li>
+                <li>Mentored a squad of 7 engineers, established automated code quality gates, and cut cycle time by 28%.</li>
+                <li>Collaborated closely with product & security teams to ensure SOC2 Type II compliance readiness.</li>
+              </ul>
+              <div class="tag-list" style="margin-top: 1.25rem; margin-bottom: 0;">
+                <span class="tag">Go</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 2 -->
+          <article class="timeline-item" id="exp-senior-engineer">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <div class="role-header">
+                <div>
+                  <h3 class="role-title">Senior Full-Stack Engineer</h3>
+                  <p class="role-company">Nova Interactive</p>
+                </div>
+                <span class="role-date">2021 — 2023</span>
+              </div>
+              <ul class="role-bullets">
+                <li>Built core customer-facing web platform utilizing Next.js, Node.js, and PostgreSQL, scaling to 350k active monthly users.</li>
+                <li>Introduced server-driven UI design system and standardized component library used across 4 internal product squads.</li>
+                <li>Designed caching layer with Redis that reduced primary database load by 60% during peak traffic spikes.</li>
+              </ul>
+              <div class="tag-list" style="margin-top: 1.25rem; margin-bottom: 0;">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 3 -->
+          <article class="timeline-item" id="exp-software-engineer">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <div class="role-header">
+                <div>
+                  <h3 class="role-title">Software Engineer</h3>
+                  <p class="role-company">Helios Digital Labs</p>
+                </div>
+                <span class="role-date">2019 — 2021</span>
+              </div>
+              <ul class="role-bullets">
+                <li>Developed microservices in Python (FastAPI) and TypeScript for high-volume financial data processing.</li>
+                <li>Automated end-to-end integration testing and CI/CD pipelines with GitHub Actions, reducing deployment errors by 70%.</li>
+                <li>Implemented GraphQL federation gateway unifying 8 disparate internal REST services.</li>
+              </ul>
+              <div class="tag-list" style="margin-top: 1.25rem; margin-bottom: 0;">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Jest</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section class="resume-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title" id="skills-title">Skills & Technologies</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card skills-category" id="skills-languages">
+            <h3 class="skills-category-title">Languages & Frameworks</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">JavaScript (ESNext)</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Go</span>
+              <span class="skill-chip">React / Next.js</span>
+              <span class="skill-chip">Node.js / Express</span>
+              <span class="skill-chip">FastAPI</span>
+              <span class="skill-chip">HTML5 & Modern CSS</span>
+            </div>
+          </div>
+
+          <div class="card skills-category" id="skills-cloud">
+            <h3 class="skills-category-title">Infrastructure & Data</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">AWS (ECS, S3, RDS, Lambda)</span>
+              <span class="skill-chip">Docker & Containerization</span>
+              <span class="skill-chip">Kubernetes</span>
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">Redis</span>
+              <span class="skill-chip">ClickHouse</span>
+              <span class="skill-chip">Terraform</span>
+              <span class="skill-chip">GitHub Actions CI/CD</span>
+            </div>
+          </div>
+
+          <div class="card skills-category" id="skills-architecture">
+            <h3 class="skills-category-title">Architecture & Systems</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Distributed Systems</span>
+              <span class="skill-chip">REST & GraphQL APIs</span>
+              <span class="skill-chip">Microservices</span>
+              <span class="skill-chip">Event-Driven Architecture</span>
+              <span class="skill-chip">System Design</span>
+              <span class="skill-chip">Web Security & OWASP</span>
+            </div>
+          </div>
+
+          <div class="card skills-category" id="skills-tooling">
+            <h3 class="skills-category-title">Tools & Methodologies</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Git & GitHub</span>
+              <span class="skill-chip">Linux / POSIX</span>
+              <span class="skill-chip">Test-Driven Development (TDD)</span>
+              <span class="skill-chip">Agile / Scrum Leadership</span>
+              <span class="skill-chip">Figma & UI Prototyping</span>
+              <span class="skill-chip">Datadog / OpenTelemetry</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Certifications -->
+      <section class="resume-section" id="education" aria-labelledby="education-title">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title" id="education-title">Education & Certifications</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card" id="edu-degree">
+            <div class="role-header">
+              <div>
+                <h3 class="role-title">B.S. in Computer Science</h3>
+                <p class="role-company">University of Engineering & Technology</p>
+              </div>
+              <span class="role-date">Graduated Magna Cum Laude</span>
+            </div>
+            <p class="project-desc" style="margin-top: 0.5rem; margin-bottom: 0;">
+              Focus on distributed systems, algorithms, operating systems, and human-computer interaction.
+            </p>
+          </div>
+
+          <div class="card" id="certifications">
+            <div class="role-header">
+              <div>
+                <h3 class="role-title">AWS Certified Solutions Architect</h3>
+                <p class="role-company">Amazon Web Services</p>
+              </div>
+              <span class="role-date">Associate Level</span>
+            </div>
+            <p class="project-desc" style="margin-top: 0.5rem; margin-bottom: 0;">
+              Certified in architecting secure, cost-optimized, decoupled, and highly available cloud deployments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer" id="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>© 2026 Dane. Crafted with semantic HTML & vanilla CSS.</p>
+      </div>
+      <div class="social-links" id="footer-social-links">
+        <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-github">GitHub</a>
+        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" id="social-linkedin">LinkedIn</a>
+        <a href="mailto:hello@dane.dev" class="social-link" id="social-email">Email</a>
+        <a href="index.html" class="social-link" id="social-home">Home</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
