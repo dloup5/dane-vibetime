@@ -1,0 +1,8 @@
+Project Description:
+This project is a personal portfolio website for ISDS 4125 to practice vibe coding, working directly with my code, and using GIT for version control in the Google Antigravity IDE. The website uses a hybrid layout that consists of the main landing page (index.html) that covers my profile, skills, experience, and contact information, while separate pages are used for my resume (resume.html) and a highlighted project (project.html). All of the pages use the same stylesheet (styles.css) to keep the overall design consistent. 
+
+GitHub Repository: https://github.com/dloup5/dane-vibetime                                     
+Live Website: https://dloup5.github.io/dane-vibetime/ 
+
+Learning Reflection: 
+While working on the project, I noticed that the agent used relevant paths, such as styles.css and ./resume.html, when creating the links between my pages and stylesheets. At first, I did not understand why we were linking styles.css separately in the <head> of each HTML file or why we were using relative paths instead of absolute file paths. I asked the agent, "Why do we have to link styles.css separately inside the <head> of every single HTML file, and why do we use relative paths like ./?" The agent explained that each HTML file is treated by the browser as its own independent document. Because of this, each page has to load its own stylesheet rather than relying on the styles loaded by another page. I also learned that relative paths make it possible for the files to find each other whether I am working on the website locally on my computer or viewing it online through GitHubPages to prevent the links from breaking when the website is moved. 
